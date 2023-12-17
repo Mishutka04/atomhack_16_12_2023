@@ -11,6 +11,7 @@ Web Interface: Offers an intuitive web interface for users to interact seamlessl
 
 Real-time Assistance: Provides real-time responses, optimizing the user experience and reducing the time spent searching for pertinent information.
 
+
 Installation
 Prerequisites
 Python 3.11
@@ -19,6 +20,7 @@ Pipenv
 Installation Steps
 Clone the repository:
 
+```shell script
 bash
 Copy code
 git clone https://github.com/yourusername/atomprocure-assistant.git
@@ -53,6 +55,7 @@ bash
 Copy code
 npm start
 Access the AtomProcure Assistant at http://localhost:8000 in your web browser.
+```
 
 Usage
 Open the web interface at http://localhost:8000.
