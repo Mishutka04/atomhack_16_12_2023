@@ -14,7 +14,7 @@ Real-time Assistance: Provides real-time responses, optimizing the user experien
 Installation
 Prerequisites
 Python 3.11
-Node.js and npm
+React.js and npm
 Pipenv
 Installation Steps
 Clone the repository:
