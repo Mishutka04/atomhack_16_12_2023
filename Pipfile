@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+transformers = {extras = ["sentencepiece"], version = "*"}
+tensorflow = "==2.15"
+torchvision = "*"
+django-cors-headers = "*"
+aiogram = "*"
+datasets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.7"
