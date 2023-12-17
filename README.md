@@ -16,15 +16,15 @@
 
 Для установки и заупска этого проекта вам понадобятся следующие зависимости: 
 
-**django**
-**djangorestframework**
-**transformers = {extras = ["sentencepiece"], version = "*"}**
-**tensorflow**
-**torchvision**
-**django-cors-headers**
-**aiogram**
-**datasets**
-**JS React**
+**django,**
+**djangorestframework,**
+**transformers = {extras = ["sentencepiece"], version = "*"},**
+**tensorflow,**
+**torchvision,**
+**django-cors-headers,**
+**aiogram,**
+**datasets,**
+**JS React,**
 
 Вы можете установить их с помощью, выполнив следующую команду:
 
