@@ -21,33 +21,22 @@ Installation Steps
 Clone the repository:
 
 ```shell script
-bash
-Copy code
+
 git clone https://github.com/yourusername/atomprocure-assistant.git
 Navigate to the project directory:
 
-bash
-Copy code
 pipenv shell
 Install pithon dependencies:
 
-bash
-Copy code
 pipenv install
 Install pithon dependencies:
 
-bash
-Copy code
 npm install
 Run the development server:
 
-bash
-Copy code
 ./manage.py runserver
 For frontend development, execute:
 
-bash
-Copy code
 npm start
 Access the AtomProcure Assistant at http://localhost:8000 in your web browser.
 ```
