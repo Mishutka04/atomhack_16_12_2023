@@ -28,18 +28,13 @@ Navigate to the project directory:
 
 bash
 Copy code
-cd atomprocure-assistant
-Set up a virtual environment with Pipenv:
-
-bash
-Copy code
-pipenv install --dev
-Activate the virtual environment:
-
-bash
-Copy code
 pipenv shell
-Install Node.js dependencies:
+Install pithon dependencies:
+
+bash
+Copy code
+pipenv install
+Install pithon dependencies:
 
 bash
 Copy code
