@@ -4,8 +4,10 @@ import torch
 from transformers import pipeline
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message
+from aiogram.filters import Command
 
-bot = Bot(token="")
+
+bot = Bot(token="6834162026:AAE4tPhJbqt5coUs1l_Y0Ooqs15mx-S83FY")
 dp = Dispatcher()
 
 model = "Denis431/docs_generate_v2"
@@ -26,6 +28,14 @@ except Exception as e:
 async def echo_message(message: types.Message):
     answer = pipe(message.text, num_return_sequences=1)[0]["generated_text"]
     await message.answer(text=answer)
+
+
+@dp.message(Command("start"))
+async def start_command(message: types.Message):
+    await message.answer(
+        text="Привет! Бот позволяет вам получать ответы на вопросы связанные с темой закопкок в атомной отрасли, "
+             "в том числе с нормативно-правовыми актами.\n⚡ Бот использует собственную модель, которая была дообучена "
+             "на sBERT модели.\n✉ Чтобы получить текстовый ответ, напишите свой вопрос в чат.\nУдачного пользования!")
 
 
 async def main():
