@@ -5,7 +5,7 @@ from transformers import pipeline
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message
 
-bot = Bot(token="6834162026:AAE4tPhJbqt5coUs1l_Y0Ooqs15mx-S83FY")
+bot = Bot(token="")
 dp = Dispatcher()
 
 model = "Denis431/docs_generate_v2"

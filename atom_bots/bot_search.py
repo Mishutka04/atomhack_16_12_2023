@@ -8,7 +8,7 @@ from transformers import AutoTokenizer, AutoModel
 import torch
 
 
-bot = Bot(token="6860291931:AAG6h8GkHcEjLCrSChOVaDp7yg1sxnwtqi0")
+bot = Bot(token="")
 dp = Dispatcher()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
