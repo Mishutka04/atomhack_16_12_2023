@@ -1,57 +1,70 @@
-Project Title: AtomProcure Assistant
-Project Description
-AtomProcure Assistant is an intelligent prototype service, combining chat-bot functionality and a user-friendly web interface, powered by cutting-edge AI technologies. The service leverages Natural Language Processing (NLP) and generative neural networks to classify user queries and generate highly relevant responses based on the regulatory documentation within the procurement sphere of Rosatom.
+# atomhack_16_12_2023
 
-Features
-NLP-Powered Classification: Utilizes advanced NLP techniques to accurately classify user queries related to Rosatom's procurement processes.
+# Хакатон АтомикХак – первый и последний хакатон в 2023 году. 
+# Кейс Прототип сервиса (чат-бот, web-интерфейс) на основе ИИ (технология
+# NLP (обработка естественного языка) и генеративные нейросети),
+# который классифицирует запросы пользователей и генерирует
+# релевантные ответы согласно нормативной документации в сфере
+# закупок Росатома.
 
-Generative Neural Networks: Employs generative neural networks to generate contextually relevant responses by extracting information from the extensive pool of regulatory documents.
+Команда - **Bitcoin Bandit's**
 
-Web Interface: Offers an intuitive web interface for users to interact seamlessly with the service, making the process of obtaining information more user-friendly.
+Данный репозиторий содержит код модели для распознования именованных сущностей. Данная ML модель поможет предсказывать характеристики апостериорного распределения для каждого из параметров.
 
-Real-time Assistance: Provides real-time responses, optimizing the user experience and reducing the time spent searching for pertinent information.
+Стек: **Python**, **PyTorch**, **Transformers**
 
+## Содержание 
 
-Installation
-Prerequisites
-Python 3.11
-React.js and npm
-Pipenv
-Installation Steps
-Clone the repository:
+- [Установка](#установка)
+- [Использование](#использование)
 
-```shell script
+## Установка 
 
-git clone https://github.com/yourusername/atomprocure-assistant.git
-Navigate to the project directory:
+Для установки и заупска этого проекта вам понадобятся следующие зависимости: 
 
-pipenv shell
-Install pithon dependencies:
+**django**
+**djangorestframework**
+**transformers = {extras = ["sentencepiece"], version = "*"}**
+**tensorflow**
+**torchvision**
+**django-cors-headers**
+**aiogram**
+**datasets**
+**JS React**
 
-pipenv install
-Install pithon dependencies:
+Вы можете установить их с помощью, выполнив следующую команду:
 
-npm install
-Run the development server:
+```
+$ pipenv shell
+$ pipenv install
+$ npm install
+$ npm start
+```
+Эта команда автоматически установит все необходимые зависимости, указанные в файле [Pipfile](Pipfile). Пожалуйста, удостоверьтесь, что у вас установлен **Python3.11** и **pipenv** перед выполнением этой команды.
 
-./manage.py runserver
-For frontend development, execute:
+После успешной установки зависимостей вы будете готовы использовать и запускать проект.
 
-npm start
-Access the AtomProcure Assistant at http://localhost:8000 in your web browser.
+## Использование
+Запуск сервера разработки:
+```
+$ ./manage.py runserver
+```
+Запуск фронтенд приложения:
+```
+$ npm start
 ```
 
-Usage
-Open the web interface at http://localhost:8000.
-Interact with the chat-bot to classify and generate relevant responses to your procurement-related queries.
-Contributing
-Contributions to enhance the capabilities and efficiency of the AtomProcure Assistant are welcome. Follow the standard GitHub flow for contributions: Fork -> Branch -> Pull Request.
+Файлы с кодом в формате Jupiter Notebook: [Atom_GPT.ipynb](notebook/Atom_GPT.ipynb) [Семантический_поиск_fin.ipynb](notebook/Семантический_поиск_fin.ipynb)
 
-License
-This project is licensed under the MIT License.
+Собранные датасеты [datasets](datasets)
 
-Acknowledgments
-The AtomProcure Assistant project acknowledges and appreciates the contributions of the open-source community and the developers of the libraries and frameworks used.
+Telegram Чат боты: [bot_generate.py](atom_bots/bot_generate.py) [bot_search.py](atom_bots/bot_search.py)
 
-Contact
-Bitcoin Bandits
+Ссылки на ботов:
+
+```
+t.me/atomicGPTbot
+t.me/atomicsBERTbot
+```
+
+Заменить пути к файлам на актуальные, после чего запустить все ячейки.
